@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+  <style>
+    body{
+      font-size:"20px";
+    }
+    form{
+      border:2px solid black;
+      border-radius:10px;
+    }
+    button{
+      background-color:orange;
+      padding:5px;
+    }
+    div{
+      margin-left:10px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="contactPage">
+    <h2>My Contact Details</h2>
+    <address>
+      Address : Siddhartha Nagar,Thane(E) <br>
+      Contact No : +91 90xxx xxx89 <br>
+      Email Id : <a href="mailto:rohanshirke25812@gmail.com?subject=feedback">rohanshirke25812@gmail.com</a>
+    </address>
+  </div>
+    <br>
+    <hr>
+
+    <h2>About You</h2>
+    <form action="mailto:rohanshirke25812@gmail.com" method="post" enctype="text/plain">
+      <br>
+        <div>
+
+            <label for="name">Enter Your Name : </label>
+            <input type="text" name="name" value="" placeholder="Enter your name" required> <br><br>
+            <label for="email">Email : </label>
+            <input type="email" name="email" value="" placeholder="Enter your email"required><br><br>
+            <label for="pwd">Password : </label>
+            <input type="password" name="pwd" value="" placeholder="Enter your Password"required><br><br>
+            <label for="gender">Select Gender : </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="CSS">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender"
+            <label for="other">Other</label><br><br>
+            <label for="dob">Date Of Birth : </label>
+            <input type="date" name="dob" value=""><br><br
+            <label for="myfile">Your ID card : </label>
+            <input type="file" id="myfile" name="myfile" multiple accept="application/pdf"><br><br>
+            <label for="color">Favorite Color : </label>
+            <input type="color" name="color" value=""><br><br>
+            <label for="choice">Which Courses do you Like ?</label><br>
+            <input type="checkbox" name="choice" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" name="choice" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="choice" value="js">
+            <label for="js">JavaScript</label><br><br>
+            <label for="bio">Bio : </label><br>
+            <textarea name="bio" rows="5" cols="50" placeholder="Tell me about yourself"></textarea><br><br>
+            <button type="submit" name="button">Submit</button><br>
+
+        </div><br>
+    </form>
+
+</body>
+</html>
